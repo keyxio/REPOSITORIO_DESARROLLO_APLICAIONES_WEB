@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyla Xiomara Espinoza Morales - Portafolio</title>
+    <meta name="description" content="Portafolio de Desarrollo de Aplicaciones Web de Keyla Xiomara Espinoza Morales - Desarrolladora de Aplicaciones Web">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Portafolio </a>
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link">INICIO</a>
+                <a href="#contenido" class="nav-link">PORTAFOLIO</a>
+            </div>
+            <button class="nav-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Desarrolladora de Aplicaciones Web</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="gradient-text">Keyla Xiomara</span>
+                    <br>
+                    <span class="hero-subtitle">Espinoza Morales</span>
+                </h1>
+
+                <p class="hero-description">
+                    "Interesada en redes, aprendiendo desarrollo web con HTML y conociendo cómo funciona la creación de páginas."
+                </p>
+
+                <!-- Botón con foto -->
+                <div class="photo-button-container">
+                    <button class="photo-button" onclick="scrollToContent()">
+                        <img src="images/foto_EMK.jpg" alt="Keyla Xiomara Espinoza Morales" class="photo-img">
+                        <div class="photo-overlay">
+                            <span>Ver Portafolio</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <div id="contenido" class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Navegación de secciones -->
+                <div class="section-nav">
+                    <button class="nav-btn active" data-section="sobremi">
+                        <div class="nav-btn-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span>Sobre Mí</span>
+                    </button>
+                    <button class="nav-btn" data-section="proyectos">
+                        <div class="nav-btn-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span>Proyectos</span>
+                    </button>
+                    <button class="nav-btn" data-section="cuaderno">
+                        <div class="nav-btn-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <span>Cuaderno</span>
+                    </button>
+                    <button class="nav-btn" data-section="reflexion">
+                        <div class="nav-btn-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <span>Reflexión</span>
+                    </button>
+                    <button class="nav-btn" data-section="bibliografia">
+                        <div class="nav-btn-icon">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                        <span>Bibliografía</span>
+                    </button>
+                    <button class="nav-btn" data-section="contacto">
+                        <div class="nav-btn-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span>Contacto</span>
+                    </button>
+                </div>
+
+                <!-- Contenido de las secciones -->
+                <div class="section-content">
+                    <!-- Sobre Mí -->
+                    <div id="sobremi" class="content-section active">
+                        <div class="section-header">
+                            <h2>Sobre Mí</h2>
+                            <div class="section-divider"></div>
+                        </div>
+
+                        <div class="about-content">
+                            <div class="about-image">
+                                <div class="image-container">
+                                    <img src="images/foto_EMK.jpg" alt="Mi nombre" width="200">
+                                    <div class="image-info">
+                                        <h3>Keyla Xiomara Espinoza Morales</h3>
+                                        <p>Desarrolladora </p>
+                                        <p class="university">Universidad Nacional del Centro del Perú</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-details">
+                                <div class="info-card">
+                                    <h3><i class="fas fa-quote-left"></i> Bienvenida e Introducción</h3>
+                                    <p><strong>¡Hola! Soy Keyla Xiomara,</strong> soy estudiante del noveno semestre de Ingeniería de Sistemas en la Universidad Nacional del Centro del Perú (UNCP), con un marcado interés en el área de tecnologías de la información. Me apasionan temas como la continuidad de TI, el hacking ético y el desarrollo web.</p>
+                                     <p>Creo que el conocimiento va más allá del aula: se construye también a través de la práctica, la exploración personal y la solución de problemas reales. Por ello busco fortalecer mis habilidades en el diseño de soluciones web con herramientas como HTML.</p>
+                                     <p>Mi objetivo es convertirme en una profesional integral, capaz de combinar conocimientos técnicos con responsabilidad social, para crear soluciones tecnológicas eficientes, accesibles y seguras.</p>
+                                </div>
+
+                                <div class="info-grid">
+                                    <div class="info-card">
+                                        <h3><i class="fas fa-user"></i> Información Personal</h3>
+                                        <ul class="info-list">
+                                            <li><span>Nombre:</span> Keyla Xiomara Espinoza Morales</li>
+                                            <li><span>Email:</span> keyla102003@gmail.com</li>
+                                            <li><span>Universidad:</span> Universidad Nacional del Centro del Perú</li>
+                                            <li><span>Carrera:</span>Ingenieria de Sistemas</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="info-card">
+                                        <h3><i class="fas fa-code"></i> Habilidades Técnicas</h3>
+                                        <div class="skills-list">
+                                            <div class="skill-item">
+                                                <div class="skill-header">
+                                                    <span>HTML5 & CSS3</span>
+                                                    <span>45%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-progress" style="width: 45%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <div class="skill-header">
+                                                    <span>JavaScript & React</span>
+                                                    <span>50%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-progress" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <div class="skill-header">
+                                                    <span>Node.js & Express</span>
+                                                    <span>42%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-progress" style="width: 42%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyectos -->
+                    <div id="proyectos" class="content-section">
+                        <div class="section-header">
+                            <h2>Proyectos</h2>
+                            <div class="section-divider"></div>
+                            <p>Proyecto finalizado.</p>
+                        </div>
+
+                       <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="images/portafolio.jpg" alt="Proyecto del curso">
+                                    <div class="project-status development">Finalizado</div>
+                                    <div class="project-overlay">
+                                        <a href="https://github.com/keyxio/Portafolio-de-Desarrollo-de-Aplicaciones-Web" class="project-link" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Portafolio</h3>
+                                    <p>Proyecto desarrollado durante el curso de Desarrollo de Aplicaciones Web. Consiste en un sistema CRUD para gestionar usuarios, con interfaz amigable y conexión a base de datos.</p>
+                                    <div class="project-tech">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cuaderno -->
+                    <div id="cuaderno" class="content-section">
+                        <div class="section-header">
+                            <h2>Cuaderno de Aprendizaje</h2>
+                            <div class="section-divider"></div>
+                            <p>Registro detallado de mi proceso de aprendizaje semanal.</p>
+                        </div>
+
+                        <!-- Vista de lista de semanas -->
+                        <div class="weeks-list-view">
+                            <div class="weeks-grid">
+                                <!-- Semanas 1–16 -->
+                                <a href="weeks/semana-1.html" class="week-item" target="_blank">
+                                    <div class="week-number">1</div>
+                                    <div class="week-title">Fundamentos Tecnologías Web</div>
+                                    <div class="week-date">Semana 1</div>
+                                </a>
+                                <a href="weeks/semana-2.html" class="week-item" target="_blank">
+                                    <div class="week-number">2</div>
+                                    <div class="week-title">Visual Studio Code y Roles del Desarrollo Web</div>
+                                    <div class="week-date">Semana 2</div>
+                                </a>
+                                <a href="weeks/semana-3.html" class="week-item" target="_blank">
+                                    <div class="week-number">3</div>
+                                    <div class="week-title">HTML5, XML y Estructura DOM</div>
+                                    <div class="week-date">Semana 3</div>
+                                </a>
+                                <a href="weeks/semana-4.html" class="week-item" target="_blank">
+                                    <div class="week-number">4</div>
+                                    <div class="week-title">Front-End con Javascript y Typescript</div>
+                                    <div class="week-date">Semana 4</div>
+                                </a>
+                                <a href="weeks/semana-5.html" class="week-item" target="_blank">
+                                    <div class="week-number">5</div>
+                                    <div class="week-title">FrontEnd con Framework JS</div>
+                                    <div class="week-date">Semana 5</div>
+                                </a>
+                                <a href="weeks/semana-6.html" class="week-item" target="_blank">
+                                    <div class="week-number">6</div>
+                                    <div class="week-title">Componentes UI con Tailwind</div>
+                                    <div class="week-date">Semana 6</div>
+                                </a>
+                                <a href="weeks/semana-7.html" class="week-item" target="_blank">
+                                    <div class="week-number">7</div>
+                                    <div class="week-title">Eventos, Hooks y Consumo de APIs</div>
+                                    <div class="week-date">Semana 7</div>
+                                </a>
+                                <a href="weeks/semana-8.html" class="week-item" target="_blank">
+                                    <div class="week-number">8</div>
+                                    <div class="week-title">Fin de consolidado</div>
+                                    <div class="week-date">Semana 8</div>
+                                </a>
+                                <a href="weeks/semana-9.html" class="week-item" target="_blank">
+                                    <div class="week-number">9</div>
+                                    <div class="week-title">Backend con PHP y JSP</div>
+                                    <div class="week-date">Semana 9</div>
+                                </a>
+                                <a href="weeks/semana-10.html" class="week-item" target="_blank">
+                                    <div class="week-number">10</div>
+                                    <div class="week-title">Fundamentos de Python y Estructuras</div>
+                                    <div class="week-date">Semana 10</div>
+                                </a>
+                                <a href="weeks/semana-11.html" class="week-item" target="_blank">
+                                    <div class="week-number">11</div>
+                                    <div class="week-title">Django: URLs, Vistas y Plantillas</div>
+                                    <div class="week-date">Semana 11</div>
+                                </a>
+                                <a href="weeks/semana-12.html" class="week-item" target="_blank">
+                                    <div class="week-number">12</div>
+                                    <div class="week-title">Formularios, Admin y Seguridad en Django</div>
+                                    <div class="week-date">Semana 12</div>
+                                </a>
+                                <a href="weeks/semana-13.html" class="week-item" target="_blank">
+                                    <div class="week-number">13</div>
+                                    <div class="week-title">Diseño de API RESTful con Django</div>
+                                    <div class="week-date">Semana 13</div>
+                                </a>
+                                <a href="weeks/semana-14.html" class="week-item" target="_blank">
+                                    <div class="week-number">14</div>
+                                    <div class="week-title">Microservicios con Django, Docker y Kubernetes</div>
+                                    <div class="week-date">Semana 14</div>
+                                </a>
+                                <a href="weeks/semana-15.html" class="week-item" target="_blank">
+                                    <div class="week-number">15</div>
+                                    <div class="week-title">Exposición de Proyecto y RSU</div>
+                                    <div class="week-date">Semana 15</div>
+                                </a>
+                                <a href="weeks/semana-16.html" class="week-item" target="_blank">
+                                    <div class="week-number">16</div>
+                                    <div class="week-title">Revisión Final y Consolidado</div>
+                                    <div class="week-date">Semana 16</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflexión Final -->
+                    <div id="reflexion" class="content-section">
+                        <div class="section-header">
+                            <h2>Reflexión Final</h2>
+                            <div class="section-divider"></div>
+                        </div>
+
+                        <div class="reflection-content">
+                            <div class="reflection-header">
+                                <div class="reflection-icon">💭</div>
+                                <h3>Reflexión Metacognitiva</h3>
+                            </div>
+
+                            <div class="reflection-sections">
+                                <div class="reflection-card">
+                                    <h4><i class="fas fa-question-circle"></i> ¿Qué aprendí durante este curso?</h4>
+                                    <p>Durante este curso de Desarrollo de Aplicaciones Web, he experimentado un crecimiento significativo en mis conocimientos sobre tecnologías web fundamentales. Desde la primera semana, donde aprendí los conceptos básicos de las tecnologías web y los diferentes roles en el desarrollo, hasta las últimas semanas donde dominé frameworks como Bootstrap y Tailwind CSS.</p>
+                                    <p>Más allá de las tecnologías específicas como HTML5, CSS3, y los frameworks, desarrollé una comprensión profunda sobre la estructura del DOM, la importancia del diseño responsivo, y cómo crear interfaces de usuario modernas y accesibles. También aprendí sobre las mejores prácticas en el desarrollo web y la importancia de escribir código limpio y mantenible.</p>
+                                </div>
+
+                                <div class="reflection-card">
+                                    <h4><i class="fas fa-lightbulb"></i> ¿Cómo aplicaré estos conocimientos?</h4>
+                                    <p>Los conocimientos adquiridos en este curso serán fundamentales para mi desarrollo profesional como Ingeniera de Sistemas. Planeo aplicar estas habilidades en proyectos reales, tanto académicos como profesionales, creando aplicaciones web que resuelvan problemas específicos en mi área de interés: tecnologías de la información y ciberseguridad.</p>
+                                    <p>También utilizaré estas habilidades para crear herramientas web que apoyen mis otros intereses como el hacking ético y la continuidad de TI. Además, estos conocimientos me servirán como base para continuar aprendiendo tecnologías más avanzadas como JavaScript, React y desarrollo backend.</p>
+                                </div>
+
+                                <div class="reflection-card">
+                                    <h4><i class="fas fa-calendar"></i> Reflexión por Semana y Fin de Curso</h4>
+                                    <div class="reflection-grid">
+                                        <div>
+                                            <h5>Evolución Semanal</h5>
+                                            <ul>
+                                                <li>• <strong>Semana 8:</strong> Aplicación práctica de eventos, consumo de APIs y uso de Hooks</li>
+                                                <li>• <strong>Semanas 9-10:</strong> Introducción al backend con PHP, JSP y fundamentos de Python</li>
+                                                <li>• <strong>Semanas 11-12:</strong> Desarrollo backend con Django: vistas, plantillas, formularios y administración</li>
+                                                <li>• <strong>Semana 13:</strong> Construcción de API RESTful: serialización, paginación y seguridad</li>
+                                                <li>• <strong>Semana 14:</strong> Arquitectura de microservicios con Django, Docker y Kubernetes</li>
+                                                <li>• <strong>Semana 15:</strong> Exposición de proyecto final e integración de RSU</li>
+                                                <li>• <strong>Semana 16:</strong> Consolidado final y retroalimentación del curso</li>
+                                            </ul>
+
+                                        </div>
+                                        <div>
+                                            <h5>Logros Principales</h5>
+                                            <ul>
+                                                <li>• Desarrollo de páginas web estructuradas y semánticas</li>
+                                                <li>• Implementación de diseños responsivos</li>
+                                                <li>• Uso eficiente de frameworks CSS</li>
+                                                <li>• Creación de componentes reutilizables</li>
+                                                <li>• Comprensión del flujo de trabajo en desarrollo web</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reflection-card">
+                                    <h4><i class="fas fa-star"></i> Impacto Personal y Profesional</h4>
+                                    <p>Este curso ha sido fundamental para complementar mi formación en Ingeniería de Sistemas. Me ha permitido entender cómo las tecnologías web se integran con otros aspectos de la informática que me interesan, como la seguridad y las redes.</p>
+                                    <p>Además, me ha dado las herramientas necesarias para crear interfaces que puedan ser utilizadas en futuros proyectos relacionados con ciberseguridad y continuidad de TI, áreas en las que planeo especializarme profesionalmente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bibliografía -->
+                    <div id="bibliografia" class="content-section">
+                        <div class="section-header">
+                            <h2>Bibliografía</h2>
+                            <div class="section-divider"></div>
+                            <p>Recursos bibliográficos y documentación utilizada durante mi proceso de aprendizaje.</p>
+                        </div>
+
+                        <div class="bibliography-content">
+                            <h3><i class="fas fa-book"></i> Libros y Documentación</h3>
+                            <div class="bibliography-list">
+                                <div class="bibliography-item">
+                                    <div class="bib-icon">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="bib-content">
+                                        <h4>Pro Git</h4>
+                                        <p><strong>Chacon, S., & Straub, B.</strong> (2021) - Versión 2.1.22-4-g2264d13</p>
+                                        <span class="bib-type">Libro</span>
+                                    </div>
+                                    <a href="https://github.com/progit/progit2-es/releases/download/2.1.23/progit.pdf" target="_blank" class="bib-link">
+                                        <i class="fas fa-external-link-alt"></i> Acceder
+                                    </a>
+                                </div>
+
+                                <div class="bibliography-item">
+                                    <div class="bib-icon">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="bib-content">
+                                        <h4>El gran libro de HTML5, CSS3 y JavaScript</h4>
+                                        <p><strong>Gauchat, J. D.</strong> (2017) - 3a ed. - Marcombo</p>
+                                        <span class="bib-type">Libro</span>
+                                    </div>
+                                    <a href="https://github.com/jorgegarba/CodiGo8/blob/master/El%20gran%20libro%20de%20HTML5%2C%20CSS3%20y%20JavaScript%20Ed%203.pdf" target="_blank" class="bib-link">
+                                        <i class="fas fa-external-link-alt"></i> Acceder
+                                    </a>
+                                </div>
+
+                                <div class="bibliography-item">
+                                    <div class="bib-icon">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="bib-content">
+                                        <h4>Eloquent JavaScript: A modern introduction to programming</h4>
+                                        <p><strong>Haverbeke, M.</strong> (2014) - No Starch Press</p>
+                                        <span class="bib-type">Libro</span>
+                                    </div>
+                                    <a href="https://pub-97d2f14809854ff1870055724c829992.r2.dev/book.pdf" target="_blank" class="bib-link">
+                                        <i class="fas fa-external-link-alt"></i> Acceder
+                                    </a>
+                                </div>
+
+                                <div class="bibliography-item">
+                                    <div class="bib-icon">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="bib-content">
+                                        <h4>SurviveJS - React: De aprendiz a maestro</h4>
+                                        <p><strong>Vepsäläinen, J., & Expósito, R.</strong> (2017) - Leanpub</p>
+                                        <span class="bib-type">Libro</span>
+                                    </div>
+                                    <a href="https://raulexposito.com/estaticos/pdf/survivejs-react-es.pdf" target="_blank" class="bib-link">
+                                        <i class="fas fa-external-link-alt"></i> Acceder
+                                    </a>
+                                </div>
+
+                                <div class="bibliography-item">
+                                    <div class="bib-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="bib-content">
+                                        <h4>MDN Web Docs - JavaScript</h4>
+                                        <p><strong>Mozilla Developer Network</strong> (2024)</p>
+                                        <span class="bib-type">Documentación</span>
+                                    </div>
+                                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" class="bib-link">
+                                        <i class="fas fa-external-link-alt"></i> Acceder
+                                    </a>
+                                </div>
+
+                                <div class="bibliography-item">
+                                    <div class="bib-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="bib-content">
+                                        <h4>React Official Documentation</h4>
+                                        <p><strong>Facebook Inc.</strong> (2024)</p>
+                                        <span class="bib-type">Documentación</span>
+                                    </div>
+                                    <a href="https://react.dev/" target="_blank" class="bib-link">
+                                        <i class="fas fa-external-link-alt"></i> Acceder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contacto -->
+                    <div id="contacto" class="content-section">
+                        <div class="section-header">
+                            <h2>Contacto</h2>
+                            <div class="section-divider"></div>
+                            <p>¿Tienes un proyecto en mente o quieres colaborar? Me encantaría escuchar de ti.</p>
+                        </div>
+
+                        <div class="contact-content">
+                            <div class="contact-info">
+                                <h3><i class="fas fa-envelope"></i> Información de Contacto</h3>
+                                <div class="contact-items">
+                                    <div class="contact-item">
+                                        <div class="contact-icon email">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div>
+                                            <p><strong>Email</strong></p>
+                                            <p>keyla102003@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item">
+                                        <div class="contact-icon phone">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div>
+                                            <p><strong>Teléfono</strong></p>
+                                            <p>+51 957260167</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item">
+                                        <div class="contact-icon location">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            <p><strong>Ubicación</strong></p>
+                                            <p>Huancayo, Perú</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-section">
+                                <h3><i class="fas fa-share-alt"></i> Redes Sociales</h3>
+                                <div class="social-grid">
+                                    <a href="https://www.linkedin.com/in/keyla-espinoza-morales-569928329/" class="social-link linkedin">
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                    <a href="https://github.com/keyxio" class="social-link github" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+
+                                <div class="collaboration-card">
+                                    <h4>¿Necesitas ayuda?</h4>
+                                    <p>Estoy disponible para apoyarte.</p>
+                                    <button class="contact-btn">Enviar Mensaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="#" class="footer-social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/keyxio" class="footer-social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="footer-social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                © 2025 Keyla Xiomara Espinoza Morales.
+                <span>Diseñado con mucha dedicación.</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
