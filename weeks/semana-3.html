@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 3 - Estilos CSS3 y Diseño Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            padding: 2rem 0;
+        }
+        .week-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--dark-card);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .week-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
+            padding: 2rem;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .week-number {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        .week-content {
+            padding: 2.5rem;
+        }
+        .week-section {
+            margin-bottom: 2.5rem;
+        }
+        .week-section h4 {
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .week-section ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        .week-section li {
+            padding: 0.75rem 0;
+            color: var(--text-secondary);
+            border-left: 3px solid var(--primary-blue);
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        .download-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-blue);
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        .download-link:hover {
+            background: rgba(59, 130, 246, 0.2);
+            transform: translateY(-2px);
+        }
+        .back-link {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            backdrop-filter: blur(10px);
+        }
+        .back-link:hover {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--primary-blue);
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Volver al Portafolio
+    </a>
+
+    <div class="week-container">
+        <div class="week-header">
+            <div class="week-number">3</div>
+            <div class="week-info">
+                <h1>Semana 3</h1>
+                <p>Estilos CSS3 y Diseño Web</p>
+            </div>
+        </div>
+
+        <div class="week-content">
+            <div class="week-section">
+                <h4><i class="fas fa-book"></i> Temas Aprendidos</h4>
+                <ul>
+                    <li>• Sintaxis de CSS3</li>
+                    <li>• Tipos de display: block, inline, inline-block</li>
+                    <li>• Unidades de medida y propiedades básicas</li>
+                    <li>• Flexbox, Grid Layout, Position</li>
+                </ul>
+                <a href="../docs/SEMANA3.pdf" class="download-link" target="_blank">
+                    <i class="fas fa-download"></i> Descargar Material Semana 3
+                </a>
+            </div>
+
+            <div class="week-section">
+                <h4><i class="fas fa-code"></i> Ejercicios de Laboratorio</h4>
+                <p>Aplicación de Flexbox y Grid para crear diseño web responsivo</p>
+                <a href="../doc/EJERCICIOS_SEMANA3.html" class="download-link" target="_blank">
+                    <i class="fas fa-download"></i> Descargar Ejercicio
+                </a>
+            </div>
+
+            <div class="week-section">
+                <h4><i class="fas fa-lightbulb"></i> Reflexión</h4>
+                <p><em>¿Qué aprendí? He aprendido que los componentes son la esencia de la construcción de interfaces de usuario en React. Actúan como bloques de construcción independientes y reutilizables, cada uno representando una unidad lógica bien definida de la interfaz. Pueden ser de dos tipos: componentes de clase, que manejan estados y son más complejos, o componentes de función, más simples y centrados en la representación visual. Cada componente se subdivide en código HTML para la estructura, JavaScript para el comportamiento, y CSS para el estilo. ¿Cómo aprendí? Aprendí mediante el análisis de las definiciones y procedimientos descritos en las fuentes proporcionadas. La información sobre la estructura de los componentes, los tipos de componentes y las características de JSX me permitieron comprender cómo funcionan y cómo se relacionan entre sí.</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
